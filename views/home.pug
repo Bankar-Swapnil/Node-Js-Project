@@ -1,0 +1,42 @@
+extends base.pug
+
+block scripts  
+    script(src="/static/index.js") 
+
+block style 
+    style 
+        include ../static/base.css
+        include ../static/home.css
+
+block content 
+    div#sec1
+        img( src="../static/img/s.png", alt="")
+        h2 Welcome Coders 
+
+    div#sec2 
+        p ! Here is a every thing  which is you want !
+        p ! Cheatsheet of every coding language is available on this website ! 
+    <hr>
+
+    div#sec3.right 
+        img(class ="img" ,src="../static/img/img.png", alt="")
+        div.com
+            p  Every Cheatshet need for Wed devlopment  is available on this website you just have to copy it and past it into your code. It helps you to improve your coding speed and bettre understanding.
+    div#sec4.left 
+        div.com 
+            p The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages.
+        img(class ="img" ,src="../static/img/img3.jpg", alt="")
+
+    div#sec5.right 
+        img(class ="img" ,src="../static/img/img4.png", alt="")
+        div.com 
+            p Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.
+    
+    div#sec6.left  
+        div.com 
+            p JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive. Where HTML and CSS are languages that give structure and style to web pages, JavaScript gives web pages interactive elements that engage a user.
+        img(class ="img" ,src="../static/img/img5.png", alt="")
+    div#sec.right 
+        img(class='img' ,src="../static/img/img6.png", alt="")
+        div.com 
+            p MongoDB's document model is simple for developers to learn and use, while still providing all the capabilities needed to meet the most complex requirements at any scale. We provide drivers for 10+ languages, and the community has built dozens more.

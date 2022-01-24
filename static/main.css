@@ -1,0 +1,60 @@
+body{
+    margin: 0px;
+}
+
+h1{
+    padding: 20px;
+}
+
+.com1{
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.com{
+    margin-left: 10%;
+}
+
+
+#sec1{
+    width: 60%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.toolbar-item button{
+    cursor: pointer !important;
+    color: white !important;
+    border: 1px solid white !important;
+    padding: 5px 14px !important;
+}
+
+#htmllogo{
+    width: 80px;
+    height: 65px;
+}
+
+#monlogo{
+    width:69px ;
+    height: 65px;
+}
+
+
+#cslogo{
+    width:59px ;
+    height: 65px;
+}
+
+#cssimg{
+    /* display:inline-block ; */
+    width: 70%;
+}
+
+#jslogo{
+    width: 130px;
+    height: 60px;
+    margin: 0px;
+}

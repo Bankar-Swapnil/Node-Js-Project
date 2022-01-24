@@ -1,0 +1,123 @@
+extends base.pug
+
+block scripts  
+    //- script(src="/static/index.js")
+    script(src=" ../static/prism.js")   
+
+block style 
+    style 
+        include ../static/base.css
+        include ../static/main.css
+        include prism.css 
+
+block content
+    div.com1
+        img(id="cslogo" src="../static/img/csslogo.png", alt="")
+        h1 CSS Cheatsheet
+    div.com
+        div#sec1 
+            ol 
+                li Syntax
+                    pre.language-css   
+                        code 
+                            |selector{
+                            | property: value;
+                            | property2: value2;
+                            | }
+
+                li Include external css file
+                    pre.language-html   
+                        code 
+                            | &lt;link rel="stylesheet" type="text/css" href="/style.css" />
+
+
+                li Internal styles
+                    pre.language-css   
+                        code 
+                            | <style type="text/css">
+                            | div { color: #444;}
+                            | </style>
+
+                li Inline styles
+
+                    pre.language-css   
+                        code 
+                            | .clearfix:after {
+                            | clear: both;
+                            | content: " ";
+                            | display: block;
+                            | font-size: 0;
+                            | height: 0;
+                            | visibility: hidden;
+                            | }
+                            | .clearfix { display: inline-block; }
+                            | * html .clearfix { height: 1%; }
+                            | .clearfix { display: block; }
+
+                li Selectors
+                    pre.language-css   
+                        code 
+                            | div            all div tags
+                            | div,p          all divs and paragraphs
+                            | div p           paragraphs inside divs
+                            | div &lt; pall p tags,             one level deep in div
+                            | div + p           p tags immediately after div
+                            | div ~p            p tags preceded by div
+                            | .classname      all elements with class
+                            | #idname         element with ID
+                            | div.classname             divs with certain classname
+                            | div #idname             div with certain ID
+                            | #idname*          all elements inside #idname
+
+                li Media Queries
+                    pre.language-css
+                        code 
+                            | @media not|only mediatype and (media feature) {
+                            | CSS Code }
+                            | Link external file:
+                            | &lt;link rel="stylesheet" media=mediatype and|not|only (media feature href="mystylesheet.css">
+
+
+                li Viewport is 480 pixels or smaller
+                    pre.language-css   
+                        code 
+                            | @media screen and (max-width: 480px) { }
+
+                li Viewport width smaller OR height smaller
+                    pre.language-css   
+                        code 
+                            | @media screen and (max-width: 600px), (max-height: 500px) {
+
+                li Print style
+                    pre.language-css   
+                        code @media print { ... }
+
+                li Night / dark mode
+                    pre.language-css   
+                        code @media (prefers-color-scheme: dark) { ... }
+
+                li Media types
+                    pre.language-css   
+                        code all, print, screen, speech
+
+                li To seat background img
+                    pre.language-css   
+                        code background: url();
+                            
+
+                li To seat background colour
+                    pre.language-css   
+                        code background-color: ;
+
+                li To set border
+                    pre.language-css   
+                        code border: 2px solid black;
+
+                li Box model
+                    img(id ='cssimg' src="../static/img/img2.png", alt="")
+                    
+
+                
+
+        
+                

@@ -1,0 +1,148 @@
+body{
+    background: url(/static/img/loginbg1.jpg);
+}
+
+
+
+#sec{
+    text-align: center;
+    justify-content: center;
+}
+
+#logo img{
+    margin-top: 10px;
+    width: 110px;
+}
+#logo img:hover{
+    cursor: pointer;
+}
+h2{
+    margin: 0px;
+}
+
+#sec1{
+    
+    /* position: absolute;
+    top: 32%;
+    left: 20%; 
+    
+    display: block; */
+    /* width: 40%;
+    margin: auto; */
+    /* text-align: center; */
+    /* justify-content: center;
+    clear: both; */
+
+    width: 34%;
+    margin: auto;
+    padding-right: 430px;
+    padding-top: 20px;
+}
+
+
+#se img{
+    position: absolute;
+    /* top: 27%; */
+    top: 200px;
+    margin-top: 20px;
+    /* width: 350px; */
+    right: 13%;
+}
+
+
+
+
+h1{
+    border-bottom: 4px solid black;
+    width: 127px;
+    /* text-decoration: underline 4px; */
+    margin-bottom: 0px;
+}
+
+label{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+input{
+    /* width: 400; */
+    width: 66%;
+    margin: 10px 10px;
+
+    padding: 0px 10px;
+    padding-top: 10px;
+    border: none;
+    background: none;
+    font-size: 18;
+    /* text-align: center; */
+    border-bottom: 2px solid black;
+    outline: none;
+}
+
+#birthday input{
+    width: 440;
+}
+
+.btn{
+    margin: 10px;
+    padding: 10px;
+    background: none;
+    /* border: none; */
+    border-radius: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none; 
+    border: 2px solid black;
+
+}
+
+.btn:hover{
+    background-color: rgb(136, 131, 131);
+    color: honeydew;
+    font-weight: bold;
+}
+i{ 
+
+    text-align: center;
+}
+
+#co6{
+    font-size: 22px;
+    clear: both;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+#foot{
+    
+    /* color: white; */
+    /* display: flex; */
+    /* text-align: center;
+    justify-content: center;
+    clear: both;
+    width: 99%;
+    position: absolute;
+    top: 90vh; */
+
+    text-align: center;
+    width: 99%;
+    padding-top: 70px;
+
+}
+
+#foot img{
+    /* margin-top: 3px; */
+    width: 153px;
+    height: 69px;
+}
+
+#foot img:hover{
+    cursor: pointer;
+}
+
+
+
+

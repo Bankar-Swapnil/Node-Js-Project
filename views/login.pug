@@ -1,0 +1,54 @@
+html
+    head
+        title  Web Devlopers CheatSheet
+        block scripts  
+            script(src="/static/index.js") 
+            script(src="https://kit.fontawesome.com/e4c232b758.js" crossorigin="anonymous")
+
+        block style 
+            style 
+                include ../static/login.css
+    Body
+            div#sec 
+                nav#logo 
+                    img(src="../static/img/logo.png", alt="")
+                    h2  Devloper
+            div#co6 
+                p Every Web-Devlopment Cheatsheet is Available here
+                
+            section#sec1 
+                form(action="/"  ,method="post", class='myform') 
+                    h1 LogIn Now 
+                    div#c1
+                        
+                        <i class="fa fa-user-circle"></i>
+                        input(type="text" id="name" name='name', placeholder='Enter your name')
+                    
+                    div#co3
+                        <i class="fa fa-envelope"></i>
+                        
+                        input(type="email" id="email" name='email', placeholder='Enter your Email')
+
+                    div#co4
+                        <i class="fa fa-calendar"></i>
+                        <input type="date" id="birthday" name="birthday" placeholder='Enter your birthdate'>
+
+                    div#co2
+                        <i class="fa fa-key"></i>
+                        input(type="password" id="password" name='password' ,placeholder='Enter your password')
+                    
+
+                    div#co5
+                        <i class="fa fa-sign-in"></i>
+                        button(class='btn')
+                            | Sign In
+                    
+
+            footer#foot
+                <hr>
+                #con3 Web Devlopers.com
+                #con4 © 2021 Proudly Powered by Swapnil Bankar Private Limited
+                img(src="../static/img/footer.png", alt="error", srcset="")
+
+            div#se
+                img(src="../static/img/m.png", alt="")

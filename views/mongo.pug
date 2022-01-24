@@ -1,0 +1,183 @@
+extends base.pug
+
+block scripts  
+    //- script(src="/static/index.js")
+    script(src=" ../static/prism.js")   
+
+block style 
+    style 
+        include ../static/base.css
+        include ../static/main.css
+        include prism.css 
+
+block content
+    div.com1
+        img(id="monlogo" src="../static/img/mongologo.png", alt="")
+        h1 Mongodb Cheatsheet
+    div.com
+        div#sec1 
+            ol 
+                li Show All Databases
+                    pre.language-js  
+                        code 
+                            | show dbs
+
+                
+                li Show Current Database
+                    pre.language-js  
+                        code 
+                            |db
+
+                
+                li Create Or Switch Database
+                    pre.language-js  
+                        code 
+                            |use acme
+
+                
+                li Drop
+                    pre.language-js  
+                        code 
+                            |db.dropDatabase()
+
+                
+                li Create Collection
+                    pre.language-js  
+                        code 
+                            |db.createCollection('posts')
+
+                
+                li Show Collections
+                    pre.language-js  
+                        code 
+                            |show collections
+
+                
+                li Insert Row
+                    pre.language-js  
+                        code 
+                            |db.posts.insert({
+                            | title: 'Post One',
+                            | body: 'Body of post one',
+                            | category: 'News',
+                            | tags: ['news', 'events'],
+                            | user: {
+                            |   name: 'John Doe',
+                            |   status: 'author'
+                            | },
+                            | date: Date()
+                            | })
+
+                
+                li Insert Multiple Rows
+                    pre.language-js  
+                        code 
+                            |db.posts.insertMany([
+                            | { title: 'Post Two',
+                            | body: 'Body of post two',
+                            | category: 'Technology',
+                            | date: Date()
+                            | },
+                            | {
+                            |   title: 'Post Three',
+                            |   body: 'Body of post three',
+                            |   category: 'News',
+                            |   date: Date()
+                            | },
+                            | {
+                            |   title: 'Post Four',
+                            |   body: 'Body of post three',
+                            |   category: 'Entertainment',
+                            |   date: Date()
+                            | }
+                            | ])
+
+                
+                li Get All Rows
+                    pre.language-js  
+                        code 
+                            |db.posts.find()
+
+                
+                li Get All Rows Formatted
+                    pre.language-js  
+                        code 
+                            |db.posts.find().pretty()
+
+                
+                li Find Rows
+                    pre.language-js  
+                        code 
+                            |db.posts.find({ category: 'News' })
+
+                
+                li Find One Row
+                    pre.language-js  
+                        code 
+                            |db.posts.findOne({ category: 'News' })
+
+                
+                li Delete Row
+                    pre.language-js  
+                        code 
+                            |db.posts.remove({ title: 'Post Four' })
+
+                
+                li Add Index
+                    pre.language-js  
+                        code 
+                            |db.posts.createIndex({ title: 'text' })
+
+                
+                li Text Search
+                    pre.language-js  
+                        code 
+                            |db.posts.find({
+                            |   $text: {
+                            |     $search: "\"Post O\""
+                            |     }
+                            | })
+
+                
+                li Greater and Less Than
+                    pre.language-js  
+                        code 
+                            |db.posts.find({ views: { $gt: 2 } })
+                            |db.posts.find({ views: { $gte: 7 } })
+                            |db.posts.find({ views: { $lt: 7 } })
+                            |db.posts.find({ views: { $lte: 7 } })
+
+                
+                li Rename Field
+                    pre.language-js  
+                        code 
+                            |db.posts.update({ title: 'Post Two' },
+                            | {
+                            |   $rename: {
+                            |     likes: 'views'
+                            |   }
+                            | })
+
+                
+                li Find Specific Fields
+                    pre.language-js  
+                        code 
+                            |db.posts.find({ title: 'Post One' }, {
+                            |  title: 1,
+                            |  author: 1
+                            |})
+
+                
+                li Chaining
+                    pre.language-js  
+                        code 
+                            |db.posts.find().limit(2).sort({ title: 1 }).pretty()
+
+                
+                li Count Rows
+                    pre.language-js  
+                        code 
+                            |db.posts.find().count()
+                            | db.posts.find({ category: 'news' }).count()
+
+                
